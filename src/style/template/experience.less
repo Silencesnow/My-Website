@@ -1,0 +1,35 @@
+#experience{
+	color:@textDefaultColor;
+	ul{
+		margin:0 20px;
+		overflow: auto;
+	}
+	li.ex{
+		width:33.3%;
+		float:left;
+		overflow: hidden;
+		margin: 0 0 20px;
+		img{
+			width:20%;
+			margin:0 auto;
+		}
+		span{
+			display:block;
+			width:400px;
+		}
+		p{
+			text-align: center;
+		}
+	}
+	@media screen and (max-device-width: 600px){
+		li.ex{ 
+			p{
+			font-size: 60%;
+			}
+			img{
+				width: 40%;
+			}
+		}
+	}
+
+}

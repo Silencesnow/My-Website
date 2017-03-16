@@ -1,0 +1,74 @@
+
+
+#contact{
+	h2{
+		margin-bottom: 0;
+		float:left;
+	}
+	width:100%;
+	margin:0;	
+	overflow: auto;
+
+	#resume{
+		display: block;
+		float:right;
+		width:150px;
+		height:200px;
+		margin:20px 10% 20px 0;
+		font-weight: bold;
+		text-align: center;
+		background:url(../image/resume-small.png) no-repeat;
+		
+		p{
+			display: inline-block;
+			margin:75px auto;
+			line-height: 150%;
+			text-align: center;
+		}
+	}
+	#resume:hover{
+			background:url(../image/resume-clear.png) no-repeat;
+			box-shadow:0 0 20px 5px @shadowColor;
+			p{
+				color:@headBgColor;
+			}
+			transition:all 0.5s;
+		}
+	ul{
+		float:left;
+		margin: 20px 0 0 15%;
+		width:250px;
+		font-size: 120%;
+		
+		
+	}
+	li a{	
+	 	display: block;	
+		height:40px;
+		line-height: 40px;
+		padding-left:40px;
+		color:@darkColor;				
+	}
+	li a:hover{
+			color:@textDefaultColor;
+			transition:all 0.5s;
+		}
+	a#phone{
+		
+		background: url(../image/phone-icon.png) no-repeat center left;
+	}
+	a#email{
+		
+		background: url(../image/email-icon.png) no-repeat center left;
+	}
+	a#address{
+		
+		background: url(../image/address.png) no-repeat center left;
+	}	
+}
+
+@media screen and (max-device-width: 600px){
+		div#contact a#resume{
+			margin-right:125px;
+		}
+	}

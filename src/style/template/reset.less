@@ -1,0 +1,82 @@
+
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q,
+small,strong,
+ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: "微软正黑";
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ul {
+	list-style: none;
+	
+}
+a{
+	color:white;
+	text-decoration: none;
+}
+
+img { display:block; }
+
+div.wrapper{
+	width:100%;
+	max-width: 1200px;
+	margin:0 auto;
+	overflow: auto;
+}
+
+h2{
+	font-size: 150%;
+	line-height: 24px;
+	text-shadow:1px 1px 1px @shadowColor;
+	color:@darkColor;
+	margin:20px;
+}
+h2:hover{
+	text-shadow:1px 1px 3px @darkColor;
+	transition:all 0.5s;
+}
+
+section.lightColor{
+	width:100%;
+	background:@bodyLightColor url(../image/bg-1.png);
+	
+}
+
+div.wrapper:hover,div#skill:hover{
+		box-shadow:-10px 0 10px @shadowColor,
+		10px 0 10px @shadowColor;
+		transition:all 1s;
+}
+
+section.mediumColor{
+	width:100%;
+	background:@bodyMediumColor url(../image/bg-2.png);
+
+}
+section.darkColor{
+	width:100%;
+	background:@headBgColor url(../image/headerRep.png);
+	h2{
+		color: @textDefaultColor;
+	}
+}

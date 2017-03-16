@@ -1,0 +1,133 @@
+
+.slide{
+			
+		position: relative;
+		margin:20px;
+		z-index:1;
+		text-align: center;
+		-webkit-user-select:none;
+    	-moz-user-select:none;
+    	-ms-user-select:none;
+		user-select:none;
+		}
+
+.banner-list{
+	height:380px;
+	width:88%;
+	margin:0;
+	display: inline-block;
+	z-index:1;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+	user-select:none;
+	z-index: -1;
+	ul{
+		position: relative;
+		margin:0 auto;
+	}
+}
+
+.slide .prev,.slide .next{
+	width: 4%;
+	height:80px;
+	display: inline-block;
+	background-color: @buttonColor;
+	margin:0 0.4% 180px;	
+	-webkit-box-shadow: 0 0 10px @shadowColor;
+	-moz-box-shadow: 0 0 10px @shadowColor;
+	box-shadow: 0 0 10px @shadowColor;
+	cursor: pointer;
+
+}
+.slide .prev:hover,.slide .next:hover{
+		margin-bottom:175px;
+	}
+.prev{	
+	border-radius: 8px 0 0 8px;
+	background:url(../image/prev.png) no-repeat center center;
+}
+.next{	
+	border-radius:0 8px 8px 0;
+	background:url(../image/next.png) no-repeat center center;
+}
+.item{
+	position:absolute;
+	transition:all 1s;
+	border:5px solid @bodyMediumColor;
+	}
+.item img{
+	width:100%;
+	:hover{
+		transition:all 0.5s;
+	}
+	}
+.item span{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	font-size:16px;
+	background-color: @shadowColor;
+	}
+.banner-prev{
+	top:30px;
+	left:3%;
+	width:35%;
+	z-index:1	
+}
+.banner-active{
+	top:0;
+	left:25%;
+	width:50%;
+	z-index:3}
+.banner-next{
+	left:62%;
+	top:30px;
+	width:35%;
+	z-index:2}
+.banner-hide{
+	display: none;
+}
+.banner-dots{
+	text-align:center;
+	margin:0 auto;
+	li{
+		display:inline-block;
+		width:20px;
+		height:15px;		
+		margin:0 5px;	
+		cursor:pointer;
+		border:2px solid darken(@highLightColor,10%);
+	}
+		.dot-active{
+			background:@highLightColor;
+		}			
+}
+@media screen and (max-device-width: 600px){
+			.banner-list{
+				width: 80%;
+				height:220px;
+			}
+
+			.slide .prev,.slide .next{
+				width: 5%;
+				margin-bottom: 90px;
+			}
+			.slide .prev:hover,.slide .next:hover{
+				margin-bottom: 90px;
+			}
+			.banner-prev,.banner-next{
+				display: none;
+			}
+			.banner-active{
+				top:0;
+				left:0;
+				width:95%;
+				z-index:3
+			}
+
+}
