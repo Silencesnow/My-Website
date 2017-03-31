@@ -1,25 +1,34 @@
-#about{
-	width:30%;
-	@media screen and (max-device-width:600px) {
-			width:100%;
-			p{
-				text-align: center;
-			}
-	}
+.about{
+	width:100%;		
+	text-align: center;		
 	color:@textDefaultColor;
-	float:left;
-	line-height: 40px;
-	p{
-		margin-left:20px;
-		font-size: 110%;
-		span{
-			font-size: 150%;
-		}		
+	img{
+		margin:0 auto;
+		width: 200px;
+		height:200px;
+		border-radius: 50%;
+		border:5px solid #fff;	
+		cursor: pointer;	
 	}
+	p{
+		font-size: 150%;
+		line-height: 50px;
+		width: 60%;
+		margin: 0 auto;
+		border-bottom: 1px solid #fff;
+	}
+	h4{
+		line-height: 40px;
+	}
+
 }
 
-#skill{
-	float:right;
+.skill{
+	ul{
+		width:650px;
+		margin:0 auto;
+	}
+	
 	li{
 		display: block;		
 		height:30px;
@@ -64,6 +73,7 @@
 			border-radius: 8px;
 			overflow: auto;
 			position: relative;
+			cursor: pointer;
 		}
 		div.inside{
 			position: absolute;

@@ -37,45 +37,28 @@ a{
 
 img { display:block; }
 
-div.wrapper{
-	width:100%;
-	max-width: 1200px;
-	margin:0 auto;
-	overflow: auto;
-}
-
 h2{
-	font-size: 150%;
+	font-size: 250%;
 	line-height: 24px;
-	text-shadow:1px 1px 1px @shadowColor;
-	color:@darkColor;
+	text-align: center;
+	color:@textDefaultColor;
 	margin:20px;
+	text-shadow:1px 1px 3px @darkColor;
 }
 h2:hover{
-	text-shadow:1px 1px 3px @darkColor;
+	
 	transition:all 0.5s;
 }
 
-section.lightColor{
+div.section:nth-child(odd){
 	width:100%;
-	background:@bodyLightColor url(../image/bg-1.png);
+	background:@bgColor-a url(../image/bg.png);
 	
 }
 
-div.wrapper:hover,div#skill:hover{
-		box-shadow:-10px 0 10px @shadowColor,
-		10px 0 10px @shadowColor;
-		transition:all 1s;
-}
-
-section.mediumColor{
+div.section:nth-child(even){
 	width:100%;
-	background:@bodyMediumColor url(../image/bg-2.png);
-
-}
-section.darkColor{
-	width:100%;
-	background:@headBgColor url(../image/headerRep.png);
+	background:@bgColor-b url(../image/bg.png);
 	h2{
 		color: @textDefaultColor;
 	}

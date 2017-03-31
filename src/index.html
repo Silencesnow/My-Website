@@ -1,101 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
 	<title>沙冥冥的个人网站|前端开发</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<meta name="description" content="前端个人网站">
 	<meta name="keywords" content="HTML,CSS,前端,简历">
 	<meta name="author" content="Sha Mingming">
 	<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="vendor/jquery.pagepiling.css" media="screen">
 	<link rel="stylesheet" href="style/index.css" media="screen">
-	
-
 </head>
 <body id="index">
-<header>
-	<div class="wrapper">
-	    <span>
-		个人网站
-		</span>	
-		<nav>
-			<ul>
-				<li class="about" ><a href="#about" >关于我</a></li>
-				<li class="skill" ><a href="#skill" >技能</a></li>
-				<li class="work"><a href="#work" >实践</a></li>
-				<li class="experience"><a href="#experience" >经历</a></li>
-				<li class="contact"><a href="#contact" >联系我</a></li>
-				<li class="git">
-					<a href="https://github.com/Silencesnow" target="_blank"></a>					
-				</li>
-				<li class="jianshu">
-					<a href="http://www.jianshu.com/users/7ff1d797b23a/timeline" target="_blank"></a>					
-				</li>		
-			</ul>
-		</nav>
-	</div>	
-</header>
+<nav>
+	<ul>
+		<li><a href="#about" >首页</a></li>
+		<li><a href="http://www.jianshu.com/users/7ff1d797b23a/timeline" target="_blank">博客</a></li>
+		<li><a href="https://github.com/Silencesnow" target="_blank">Github</a></li>	
+	</ul>			
+</nav>	
+<div id="pagepiling">
+<div class="section about">	
+	<img src="image/icon.png" alt="icon">
+	<h2>沙冥冥</h2>
+	<p>星沉海底 · 雨过河原 · 不忧不惧</p>
+	<h4>前端开发</h4>	
+</div>
+<div class="section skill">					
+	<h2>擅长技术</h2>
+	<ul>
+		<li>
+			<div class="logo"></div>
+			<span>PhotoShop&AI</span><span class="level">90%</span>
+			<div class="outside"><div class="inside lev90"></div></div>
+			
+		</li>
+		<li>
+			<div class="logo"></div>
+			<span>HTML&CSS(less)</span>
+			<span class="level">90%</span>
+			<div class="outside"><div class="inside lev90"></div></div>					
+		</li>
+		<li>
+			<div class="logo"></div>
+			<span>JavaScript</span>
+			<span class="level">70%</span>
+			<div class="outside"><div class="inside lev70"></div></div>					
+		</li>
+		<li>
+			<div class="logo"></div>
+			<span>jQuery</span>
+			<span class="level">80%</span>
+			<div class="outside"><div class="inside lev80"></div></div>					
+		</li>
+		<li>
+			<div class="logo"></div>
+			<span>AngularJs</span>
+			<span class="level">70%</span>
+			<div class="outside"><div class="inside lev70"></div></div>					
+		</li>
+		<li>
+			<div class="logo"></div>
+			<span>Gulp&git</span>
+			<span class="level">80%</span>
+			<div class="outside"><div class="inside lev80"></div></div>					
+		</li>				
+		<li>
+			<div class="logo"></div>
+			<span>C&Java</span>
+			<span class="level">50%</span>
+			<div class="outside"><div class="inside lev50"></div></div>					
+		</li>			
+	</ul>
+	
 
-<section class="lightColor">
-	<div class="wrapper">
-		<div id="about">
-			<h2>关于我：</h2>
-			<p>
-				<span>我</span>叫沙冥冥，1990年出生，<br>
-				2014年毕业于浙江大学，<br>正在学习前端开发的知识，<br>这是我的个人网站。  (∩_∩)
-			</p>	
-		</div>
-		<div id="skill">
-			<h2>技能：</h2>
-			<ul>
-				<li>
-					<div class="logo"></div>
-					<span>PhotoShop&AI</span><span class="level">90%</span>
-					<div class="outside"><div class="inside lev90"></div></div>
-					
-				</li>
-				<li>
-					<div class="logo"></div>
-					<span>HTML&CSS(less)</span>
-					<span class="level">80%</span>
-					<div class="outside"><div class="inside lev80"></div></div>					
-				</li>
-				<li>
-					<div class="logo"></div>
-					<span>JavaScript</span>
-					<span class="level">70%</span>
-					<div class="outside"><div class="inside lev70"></div></div>					
-				</li>
-				<li>
-					<div class="logo"></div>
-					<span>jQuery</span>
-					<span class="level">80%</span>
-					<div class="outside"><div class="inside lev80"></div></div>					
-				</li>
-				<li>
-					<div class="logo"></div>
-					<span>AngularJs</span>
-					<span class="level">40%</span>
-					<div class="outside"><div class="inside lev40"></div></div>					
-				</li>
-				<li>
-					<div class="logo"></div>
-					<span>Gulp&git</span>
-					<span class="level">70%</span>
-					<div class="outside"><div class="inside lev70"></div></div>					
-				</li>				
-				<li>
-					<div class="logo"></div>
-					<span>C&Java</span>
-					<span class="level">50%</span>
-					<div class="outside"><div class="inside lev50"></div></div>					
-				</li>			
-			</ul>
-		</div>
-	</div>
-</section>
+</div>
 
-<section class="darkColor">
+<div class="section darkColor">
 	<div class="wrapper" id="work">
 		<h2>实践：</h2>
 		<div class="slide">
@@ -130,9 +112,9 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</div>
 
-<section class="lightColor">
+<div class="section lightColor">
 	<div class="wrapper">
 		<div id="experience">
 			<h2>经历：</h2>
@@ -164,13 +146,13 @@
 			</ul>				
 		</div>
 	</div>
-</section>
+</div>
 
-<section class="mediumColor">
+<div class="section mediumColor">
 	<div class="wrapper">
 		<div id="contact">
 			<h2>联系我：</h2>
-			<a id="resume" href="image/resume.pdf" target="_blank">
+			<a id="resume" href="image/沙冥冥-前端开发.pdf" target="_blank">
 				<p>点击打开<br>
 				在线简历</p>
 			</a>		
@@ -181,13 +163,13 @@
 			</ul>		
 		</div>
 	</div>
-</section>
-
+</div>
+</div>
 <footer>
 	<p>粤ICP备17016571号 | © 2017 Sha Mingming·版权所有</p>
 </footer>
-<a href="#" id="returnTop">返回顶部</a>	
 </body>
 <script type="text/javascript" src="script/jquery-3.1.1.min.js" ></script>
+<script type="text/javascript" src="vendor/jquery.pagepiling.min.js" ></script>
 <script type="text/javascript" src="script/index.js" ></script>
 </html>

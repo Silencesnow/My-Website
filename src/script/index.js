@@ -1,6 +1,13 @@
-$(function(){
-	// 项目轮播
-	
+$(document).ready(function(){
+	// 翻页
+	$('#pagepiling').pagepiling({
+		loopBottom:true,
+		navigation: {
+				position: "left",
+			}
+	});
+
+	// 项目轮播	
 	autoplay();
 	var li=$('li.item');
 	var len=li.length;
@@ -43,8 +50,6 @@ $(function(){
 		clearInterval(clock);
 	};
 	
-
-	// 轮播函数
 	function scroll(n){		
 		$('li.item').removeClass('banner-active banner-prev banner-next').addClass('banner-hide');
 
@@ -63,40 +68,13 @@ $(function(){
 	 };
 
 
- // 技能进度条
-	$("ul").on("mouseover",function(){
+ 	// 技能进度条
+	$("div.skill ul").on("mouseover",function(){
 		$(this).find("div.inside").addClass("show");
 	});
 
-	$("li").click(function(){
+	$("div.skill li").on("mouseover",function(){
 		$(this).find('div.inside').removeClass('show');
 	});
 
-// 返回头部
-$(window).on("scroll",function(){
-	returnTop();
-});
-
-function returnTop(){
-	var $scroll;
-
-	if(document.body.scrollTop){
-		$scroll=$('body').scrollTop();
-
-	}else{
-		$scroll=document.documentElement.scrollTop;
-	};
-	if($scroll>200){
-		$('#returnTop').show();
-	}else{
-		$('#returnTop').hide();
-	};
-
-	
-}
-
-
-
-
-				
 });

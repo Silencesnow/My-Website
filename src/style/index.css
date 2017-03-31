@@ -68,125 +68,78 @@ a {
 img {
   display: block;
 }
-div.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: auto;
-}
 h2 {
-  font-size: 150%;
+  font-size: 250%;
   line-height: 24px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  color: black;
+  text-align: center;
+  color: white;
   margin: 20px;
+  text-shadow: 1px 1px 3px black;
 }
 h2:hover {
-  text-shadow: 1px 1px 3px black;
   transition: all 0.5s;
 }
-section.lightColor {
+div.section:nth-child(odd) {
   width: 100%;
-  background: #707a8c url(../image/bg-1.png);
+  background: #87b0a5 url(../image/bg.png);
 }
-div.wrapper:hover,
-div#skill:hover {
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5), 10px 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 1s;
-}
-section.mediumColor {
+div.section:nth-child(even) {
   width: 100%;
-  background: #566070 url(../image/bg-2.png);
+  background: #4b85a0 url(../image/bg.png);
 }
-section.darkColor {
-  width: 100%;
-  background: #20272c url(../image/headerRep.png);
-}
-section.darkColor h2 {
+div.section:nth-child(even) h2 {
   color: white;
 }
-header {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   width: 100%;
-  background: #20272c url(../image/headerRep.png);
+  background: rgba(0, 0, 0, 0.3) url(../image/headerRep.png);
+  text-align: right;
 }
-header span {
-  display: block;
-  float: left;
-  width: 25%;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 200%;
-  color: #d1dde3;
-}
-header nav {
-  width: 75%;
-  float: left;
-}
-header nav ul {
-  text-align: center;
-}
-header nav li {
+nav li {
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  text-align: center;
   font-size: 120%;
   margin: auto 10px;
 }
-header nav li:hover {
-  color: #e07530;
+nav li:hover {
   background: url(../image/linkActive.png) no-repeat bottom center;
 }
-header nav li.git a,
-header nav li.jianshu a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+nav li:hover a:hover {
+  color: #e07530;
 }
-header nav li.git a {
-  background: url(../image/git.png) no-repeat;
-}
-header nav li.jianshu a {
-  background: url(../image/jian.png) no-repeat;
-}
-@media screen and (max-device-width: 600px) {
-  header span {
-    width: 100%;
-  }
-  header nav {
-    width: 100%;
-  }
-  header nav li {
-    margin: auto 2px;
-    font-size: 100%;
-  }
-}
-#about {
-  width: 30%;
+.about {
+  width: 100%;
+  text-align: center;
   color: white;
-  float: left;
+}
+.about img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  cursor: pointer;
+}
+.about p {
+  font-size: 150%;
+  line-height: 50px;
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.about h4 {
   line-height: 40px;
 }
-@media screen and (max-device-width: 600px) {
-  #about {
-    width: 100%;
-  }
-  #about p {
-    text-align: center;
-  }
+.skill ul {
+  width: 650px;
+  margin: 0 auto;
 }
-#about p {
-  margin-left: 20px;
-  font-size: 110%;
-}
-#about p span {
-  font-size: 150%;
-}
-#skill {
-  float: right;
-}
-#skill li {
+.skill li {
   display: block;
   height: 30px;
   line-height: 30px;
@@ -195,7 +148,7 @@ header nav li.jianshu a {
   color: white;
   margin: 15px 0 15px 20px;
 }
-#skill li .logo {
+.skill li .logo {
   width: 11px;
   height: 11px;
   margin: 9px 9px 9px 0;
@@ -206,18 +159,18 @@ header nav li.jianshu a {
   border-bottom: 1px solid #47240e;
   border-left: 1px solid #c86626;
 }
-#skill li span {
+.skill li span {
   float: left;
   font-family: "Helvetica";
 }
-#skill li span.level {
+.skill li span.level {
   float: right;
   margin: 0 20px 0 20px;
 }
-#skill li div {
+.skill li div {
   float: right;
 }
-#skill li div.outside {
+.skill li div.outside {
   float: right;
   width: 320px;
   height: 12px;
@@ -232,7 +185,7 @@ header nav li.jianshu a {
   overflow: auto;
   position: relative;
 }
-#skill li div.inside {
+.skill li div.inside {
   position: absolute;
   left: 0;
   width: 0;
@@ -240,40 +193,40 @@ header nav li.jianshu a {
   display: none;
   border-radius: 3px;
 }
-#skill li div.show {
+.skill li div.show {
   display: block;
 }
-#skill li .lev90 {
+.skill li .lev90 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px -115px;
   -webkit-animation: move90 3s;
   animation-fill-mode: forwards;
 }
-#skill li .lev80 {
+.skill li .lev80 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px -92px;
   -webkit-animation: move80 3s;
   animation-fill-mode: forwards;
 }
-#skill li .lev70 {
+.skill li .lev70 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px -69px;
   -webkit-animation: move70 3s;
   animation-fill-mode: forwards;
 }
-#skill li .lev60 {
+.skill li .lev60 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px -46px;
   -webkit-animation: move60 3s;
   animation-fill-mode: forwards;
 }
-#skill li .lev50 {
+.skill li .lev50 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px -23px;
   -webkit-animation: move50 3s;
   animation-fill-mode: forwards;
 }
-#skill li .lev40 {
+.skill li .lev40 {
   background: url(../image/result2.png) no-repeat;
   background-position: 0px 0px;
   -webkit-animation: move40 3s;
@@ -328,13 +281,13 @@ header nav li.jianshu a {
   }
 }
 @media screen and (max-device-width: 600px) {
-  #skill li {
+  .skill li {
     margin: 0 0 20px 20px;
   }
-  #skill li span.level {
+  .skill li span.level {
     float: right;
   }
-  #skill li img {
+  .skill li img {
     display: none;
   }
 }
